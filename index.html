@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu canto resort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7f3849ed7c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="display-flex">
+      <section class="logo">
+        <h1>Meu canto resort</h1>
+      </section>
+      <nav class="display-flex">
+        <a href="#top">Home</a>
+        <a href="#laisure">Laser</a>
+        <a href="#reserve">Fazer reserva</a>
+      </nav>
+    </header>
+    <main id="top">
+      <section class="banner">
+        <div class="display-flex">
+          <h1>Meu canto resort</h1>
+          <h2 class="title">
+            O lugar ideal para suas
+            <br />
+            férias em familia!
+          </h2>
+        </div>
+      </section>
+      <section class="laisure display-flex" id="laisure">
+        <div>
+          <i class="fa-brands fa-pagelines fa-2x"></i>
+          <p>Um verdadeiro paraiso!</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-bed fa-2x"></i>
+          <p>
+            Acomodações confortaveis, arejadas
+            <br />
+            e arquitetadas para o seu conforto.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-utensils fa-2x"></i>
+          <p>Serviço de quarto 24h à sua disposição.</p>
+        </div>
+      </section>
+      <section class="images display-flex">
+        <div class="img-section1 display-flex">
+          <div class="cadeiras-de-praia"></div>
+          <div class="balanco"></div>
+        </div>
+        <div class="img-section2 display-flex">
+          <div class="praia"></div>
+          <div class="love"></div>
+        </div>
+      </section>
+      <form action="get" class="reserve display-flex" id="reserve">
+        <fieldset>
+          <legend><h2>Faça sua reserva!</h2></legend>
+          <section class="check">
+            <div>
+              <label for="check-in">Check-in:</label>
+              <input id="check-in" type="date" required min="12-06-2022" />
+            </div>
+            <div>
+              <label for="check-out">Check-out:</label>
+              <input id="check-out" type="date" required />
+            </div>
+          </section>
+          <span></span>
+          <section  class="room">
+            <label for="rooms">Selecione um quarto:</label>
+            <select id="rooms" required>
+              <option value="Suite">Suite</option>
+              <option value="Suite master">Suite master</option>
+              <option value="Duas camas">Duas camas</option>
+              <option value="Três camas">Três camas</option>
+            </select>
+          </section>
+          <section class="observation">
+              <label for="obs">Observações:</label>
+              <textarea name="observation" id="obs" cols="30" rows="10"></textarea>
+          </section>
+        </fieldset>
+        <div class="submit">
+          <button type="submit">Reservar</button>
+          <button type="reset">Limpar parametros</button>
+        </div>
+      </form>
+      <footer>
+        <p>Receba as novidades direto em seu email!</p>
+        <form action="get" class="news">
+          <label for="news"></label>
+          <input type="email" id="news"/>
+          <button type="submit">Cadastrar</button>
+        </form>
+      </footer>
+    </main>
+  </body>
+</html>

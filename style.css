@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.display-flex {
+    display: flex;
+}
+
+h1 {
+    color: white;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    padding: .8em 1.6em;
+    align-items: center;
+    justify-content: space-between;
+    background: #04040480;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+p {
+    text-align: center;
+}
+
+nav {
+    gap: 1.6em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+}
+
+.banner div {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #03030340;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.banner div h1 {
+    display: none;
+}
+
+.banner h2 {
+    font-size: 4em;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.laisure {
+    padding-top: 18vh;
+    padding-bottom: 18vh;
+    background-color: #030303;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.laisure div {
+    flex-grow: 200px;
+    flex: 1;
+    display: flex;
+    height: 10vh;
+    flex-direction: column;
+    color: #257e25;
+    align-items: center;
+    justify-content: start;
+}
+
+.images {
+    margin: 1em;
+    height: 42vw;
+    justify-content: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.img-section1 {
+    flex-grow: 2;
+    gap: 1em;
+}
+
+.img-section2 {
+    flex-direction: column;
+    flex-grow: 2;
+    gap: 1em;
+}
+
+.balanco {
+    background-image: url('https://images.pexels.com/photos/3355788/pexels-photo-3355788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+}
+
+.cadeiras-de-praia {
+    background-image: url('https://images.pexels.com/photos/3355732/pexels-photo-3355732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+}
+
+.praia {
+    background-image: url('https://images.pexels.com/photos/5708052/pexels-photo-5708052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+}
+
+.love {
+    background-image: url('https://images.pexels.com/photos/348520/pexels-photo-348520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+}
+
+.reserve {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .3em;
+    background-color: #030303;
+    width: 100%;
+}
+
+.reserve fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: none;
+    width: 40%;
+    gap: 1.8em;
+}
+
+fieldset span {
+    height: 1px;
+    width: 100%;
+    background: white;
+}
+
+legend h2 {
+    color: white;
+    margin-top: 1.8em;
+}
+
+.check {
+    display: flex;
+    margin-top: 1.8em;
+    gap: 4em;
+    width: 100%;
+}
+
+.room, select {
+    width: 100%;
+}
+
+.check div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.check input, select{
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+.observation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: none;
+    border-radius: 5px;
+    border: none;
+}
+
+label {
+    color: #DEDEDE;
+    font-size: 1.2em;
+}
+
+.submit {
+    width: 40%;
+    display: flex;
+    gap: 4em;
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
+}
+
+.submit button {
+    flex: 1;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7adf7e50;
+    height: 30vh;
+    padding: 4em;
+}
+
+.news {
+    display: flex;
+    gap: .4em;
+    width: 60%;
+    margin: .8em;
+}
+
+.news button, .news input {
+    height: 40px;
+}
+
+.news input {
+    flex: 4;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px #030303 solid;
+}
+
+.news button {
+    flex: 1;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    background: #257e25e0;
+    font-size: 1.2em;
+}
+
+
+@media (max-width: 860px) {
+    header h1 {
+        display: none;
+    }
+
+    header nav {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    body header {
+        justify-content: center;
+    }
+
+    .banner h2 {
+        font-size: 8vw;
+    }
+
+    .banner div h1 {
+        display: initial;
+        font-size: 8vw;
+    }
+
+    .laisure {
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .laisure div {
+        height: 50vw;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .images {
+        flex-direction: column;
+        height: 100vh;
+        margin: 1vw;
+        padding: 0;
+    }
+
+    .reserve fieldset {
+        width: 80%;
+    }
+
+    .img-section1 {
+        flex-grow: 3;
+    }
+
+    .check, .submit {
+        gap: 1em;
+    }
+
+    .submit {
+        width: 80%;
+    }
+
+    footer {
+        padding: 2em 0;
+        height: fit-content;
+    }
+
+    .news {
+        width: 90%;
+    }
+}
