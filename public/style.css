@@ -290,7 +290,6 @@ footer {
         height: auto;
         flex-direction: column;
         padding: 0;
-        gap: 0;
     }
 
     .laisure div {
@@ -298,6 +297,8 @@ footer {
         width: 100vw;
         align-items: center;
         justify-content: center;
+        margin-bottom: 3.5em;
+        margin-top: 3.5em;
     }
 
     .images {
