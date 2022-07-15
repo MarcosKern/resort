@@ -93,6 +93,10 @@ a {
     justify-content: start;
 }
 
+.laisure p {
+    color: white;
+}
+
 .images {
     margin: 1em;
     height: 42vw;
@@ -250,15 +254,15 @@ footer {
 
 .news input {
     flex: 4;
-    border-radius: 10px 0px 0px 10px;
     border: 1px #030303 solid;
+    text-align: center;
 }
 
 .news button {
     flex: 1;
-    border-radius: 0px 10px 10px 0px;
     border: none;
-    background: #257e25e0;
+    background: #030303;
+    color: white;
     font-size: 1.2em;
 }
 
